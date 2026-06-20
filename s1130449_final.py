@@ -11,8 +11,8 @@ video_path = 0
 cap = cv2.VideoCapture(video_path)
 
 # 定義元智健身房的擁擠度門檻（可依現場實際大小調整）
-THRESHOLD_SPARSE = 1   # 3人以下算舒適
-THRESHOLD_CROWDED = 7  # 7人以上算擁擠
+THRESHOLD_SPARSE = 7   # 3人以下算舒適
+THRESHOLD_CROWDED = 10  # 7人以上算擁擠
 
 while cap.isOpened():
     ret, frame = cap.read()
